@@ -4,7 +4,7 @@ window.addEventListener("load", () => fetchNews("India"));
 async function fetchNews(query) {
   const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
   const data = await res.json();
-  // putting to check whether the data is coming from api or not
+ 
   console.log(data);
 
   bindData(data.articles);
