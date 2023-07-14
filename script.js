@@ -29,7 +29,7 @@ function fillDataInCard(cardClone, article) {
   newTitle.innerHTML = article.title;
   newDesc.innerHTML = article.description;
   const date = new Date(article.publishedAt).toLocaleString("en-Us", {
-    timeZone: "Asia/Jakarta",
+    timeZone: "Asia/Kolkata",
   });
   newSource.innerHTML = `${article.source.name} • ${date}`;
   cardClone.firstElementChild.addEventListener("click", () => {
